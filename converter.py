@@ -21,7 +21,9 @@ if __name__ == "__main__":
     choice = int(input("Enter your choice (1-3): "))
     value = float(input("Enter the value: "))
 
-    if choice == 1:
+    if value < 0:
+        print("Negative values are not allowed!")
+    elif choice == 1:
         print(value, "km =", km_to_m(value), "m")
     elif choice == 2:
         print(value, "kg =", kg_to_g(value), "g")
